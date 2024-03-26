@@ -3,3 +3,9 @@
 
 name: build and push image
 on: [push]
+jobs:
+  check-bats-version:
+  runs-on: getting-started-latest
+  steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-node@v3
