@@ -1,2 +1,5 @@
 #Pour tout push dans le repo
 # Déclencher le build d'une nouvelle image docker oe t'as capté quoi.!
+
+name: build and push image
+on: [push]
