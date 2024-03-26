@@ -9,8 +9,8 @@ jobs:
   steps:
       - uses: actions/checkout@v3
       - run: ls
-      uses: docker/login-action@v1
-      with:
+      - uses: docker/login-action@v1
+    with:
         username: ${{ secrets.ewen29242 }}
         password: ${{ secrets.Ouessant123!* }}
       uses: docker/build-push-action@v2
